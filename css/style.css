@@ -1,6 +1,10 @@
 body {
 }
 
+.container {
+	max-width: 600px;	
+}
+
 header h1, header h2 {
 	text-align: center;
 }
