@@ -1,15 +1,72 @@
+html {
+    height: 100%;
+
+}
+
 body {
+	margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    overflow-y: scroll;
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    height: 100%; 
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 0;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+}
+
+.overlay {
+    background-color: rgba(255,255,255,0.9);
+    min-height: 100%; 
 }
 
 .container {
-	max-width: 500px;
-	margin: auto;
+	padding: 10px;
 }
 
-header h1, header h2 {
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header p {
+	font-size: 1.2rem;
+}
+
+header h1 {
 	text-align: center;
 }
 
-header h1 img {
-	max-width: 250px;
+.main-logo {
+    display: block;
+    max-width: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-logo img {
+    max-width: 100%;
+}
+
+.contact {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact a {
+	display: block;
+	margin-bottom: 3px;
 }
