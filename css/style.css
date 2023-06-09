@@ -2,9 +2,14 @@ body {
 }
 
 .container {
-	max-width: 600px;	
+	max-width: 500px;
+	margin: auto;
 }
 
 header h1, header h2 {
 	text-align: center;
+}
+
+header h1 img {
+	max-width: 250px;
 }
