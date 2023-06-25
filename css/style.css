@@ -170,11 +170,18 @@ footer .section > div {
 	top: 0;
 	left: 0;
 	border-radius: 4px;
+	max-height: 80%;
+	overflow-y: scroll;
 }
 
 .legal-header {
 	display: flex;
 	justify-content: space-between;
+}
+
+#legal h4 {
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 @media only screen and (min-width: 500px){
