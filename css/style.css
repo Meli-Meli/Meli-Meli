@@ -1,20 +1,17 @@
 html {
     height: 100%;
-
 }
 
 body {
+    background-color: #ffeded;
 	margin: 0;
     padding: 0;
-    font-size: 0.9rem;
-    overflow-y: scroll;
-    background-image: url('../img/bg.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;  
-    height: 100%; 
+	font-size: 0.85rem;
     font-family: 'Varela Round', sans-serif;
+    background-image: url("../img/bee.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -26,14 +23,9 @@ a {
 	text-decoration: none;
 }
 
-.overlay {
-    background-color: rgba(255,255,255,0.9);
-    min-height: 100%; 
-}
-
 .container {
-	padding: 10px;
-	max-width: 500px;
+	padding: 30px;
+	max-width: 600px;
 	margin: auto;
 }
 
@@ -42,6 +34,8 @@ header {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 0px;
 }
 
 header p {
@@ -53,18 +47,173 @@ header h1 {
 	margin-bottom: 0;
 }
 
+h2 {
+	font-family: 'Shrimp', sans-serif;
+	margin-bottom: 0.4rem;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	line-height: 1.4rem;
+}
+
 .main-logo {
     display: block;
-	width: 100px;
+	width: 140px;
     margin: auto;
 }
 
 .contact {
-	text-transform: uppercase;
 	font-weight: bold;
+}
+
+.contact p {
+	font-weight: normal;
 }
 
 .contact a, .contact div {
 	display: block;
 	margin-bottom: 7px;
+}
+
+.section {
+	background-color: rgba(255,255,255,0.95);
+	margin-bottom: 30px;
+	border-radius: 4px;
+	border: 1px solid #f8d7e5;
+	position: relative;
+	overflow: hidden;
+}
+
+.section > div {
+	margin: 30px 50px;
+}
+
+.section p {
+	text-align: justify;
+}
+
+.section.miel, .section.nous {
+	padding-right: 0px;
+}
+
+.section.abeilles, .section.contact {
+	padding-left: 0px;
+}
+
+.section .fleurs {
+	position: absolute;
+}
+
+.section .fleurs1 {
+	right: -80px;
+	bottom: 0;
+	width: 130px;
+}
+
+.section .fleurs2 {
+	left: 0;
+	top: 0;
+	width: 50px;
+}
+
+.section .fleurs3 {
+	left: -80px;
+	top: 0;
+	width: 120px;
+}
+
+.section .fleurs4 {
+	left: 230px;
+	bottom: 0;
+}
+
+.section .fleurs5 {
+	right: -70px;
+	top: 0;
+	width: 230px;
+}
+
+.section .fleurs6 {
+	left: -80px;
+	top: 0;
+	width: 130px;
+}
+
+.section .fleurs7 {
+	right: 40px;
+	top: 140px;
+	width: 80px;
+	visibility: hidden;
+}
+
+footer .section {
+	background-color: rgba(255,255,255,0.7);
+	margin-bottom: 0;
+}
+
+footer .section > div {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+#legal {
+	display: none;
+	position: fixed;
+	background: white;
+	padding: 20px;
+	margin: 20px;
+	top: 0;
+	left: 0;
+	border-radius: 4px;
+}
+
+.legal-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (min-width: 500px){
+	body {
+		font-size: 0.9rem;
+	}
+
+	.section.miel, .section.nous {
+		padding-right: 100px;
+	}
+
+	.section.abeilles, .section.contact {
+		padding-left: 100px;
+	}
+
+	.section .fleurs1 {
+		right: 0;
+	}
+
+	.section .fleurs3 {
+		left: 0px;
+	}
+
+	.section .fleurs5 {
+		right: 0px;
+	}
+
+	.section .fleurs6 {
+		left: 0px;
+	}
+
+	.section .fleurs7 {
+		visibility: visible;
+	}
+}
+
+
+@media only screen and (min-width: 1000px){
+	.container {
+		margin-left: 40%;
+	}
 }
