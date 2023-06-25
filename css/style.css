@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-	padding: 30px;
+	padding: 30px 20px;
 	max-width: 600px;
 	margin: auto;
 }
@@ -194,6 +194,10 @@ footer .section > div {
 @media only screen and (min-width: 500px){
 	body {
 		font-size: 0.9rem;
+	}
+
+	.container {
+		padding: 30px;
 	}
 
 	.section.miel, .section.nous {
