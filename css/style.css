@@ -7,7 +7,7 @@ body {
 	margin: 0;
     padding: 0;
 	font-size: 0.85rem;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'varela_roundregular', sans-serif;
     background-image: url("../img/abeille.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -48,7 +48,7 @@ header h1 {
 }
 
 h2 {
-	font-family: 'Shrimp', sans-serif;
+	font-family: 'shrimpregular', sans-serif;
 	margin-bottom: 0.4rem;
 	text-transform: uppercase;
 	font-weight: normal;
